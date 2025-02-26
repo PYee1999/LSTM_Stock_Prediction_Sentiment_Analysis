@@ -1,15 +1,0 @@
-
-gpython:S1192k"IDefine a constant instead of duplicating this literal '%Y-%m-%d' 3 times.(¥’ö8û®Ö²—1
-=python:S125"Remove this commented out code.( œğš8ı®Ö²—1
-Bpython:S125"Remove this commented out code.(‘†‘Ñıÿÿÿÿ8¶»×²—1
-Bpython:S125"Remove this commented out code.(ıÂª’ûÿÿÿÿ8Ù”Ù²—1
-{python:S117@"]Rename this local variable "y_Target_Est" to match the regular expression ^[_a-z][a-z0-9_]*$.(½‚í8ş®Ö²—1
-dpython:S48303"@Enable server certificate validation on this SSL/TLS connection.(ÄƒşÌüÿÿÿÿ8ş®Ö²—1
-[python:S5754X"<Specify an exception class to catch or reraise the exception(ˆÊÉ·8ÿ®Ö²—1
-xpython:S3776]"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(¥Ì¦Ôøÿÿÿÿ8ÿ®Ö²—1
-|python:S107Ğ"XFunction "insert_prediction" has 14 parameters, which is greater than the 13 authorized.(¸€›Ùûÿÿÿÿ8€¯Ö²—1
-Xpython:S1143£"9Remove this "return" statement from this "finally" block.(ë«üf8€¯Ö²—1
-Ppython:S1481¿"0Remove the unused local variable "testing_days".(Äü‡8¯Ö²—1
-Wpython:S1481Â"2Remove the unused local variable "predicted_days".(Ú‡á™üÿÿÿÿ8‚¯Ö²—1
-Opython:S1481¾"1Remove the unused local variable "training_days".(¥îÎçşÿÿÿÿ
->python:S125§"Remove this commented out code.( Ò ‡8„¯Ö²—1

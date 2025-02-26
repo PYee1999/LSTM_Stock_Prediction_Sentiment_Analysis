@@ -537,7 +537,7 @@ def run_app():
         with hist_right_col:
             vol_tog_on = st.toggle("Volume", value=True)
     with sentiment_col:
-        st.write("Enable news sentiment evaluation:")
+        st.write("Enable news sentiment evaluators:")
         sentiment_left, sentiment_right = st.columns([1, 1])
         with sentiment_left:
             vader_on = st.toggle("VADER", value=True)

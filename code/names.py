@@ -1,4 +1,4 @@
-_BASE_DIR = "/Users/Preston/LSTM_Stock_Prediction_Sentiment_Analysis/code"
+_BASE_DIR = "code"
 
 
 class LOCATIONS:
@@ -17,8 +17,6 @@ class KEYS:
         'DNT': '1', # Do Not Track Request Header 
         'Connection': 'close'
     }
-    FINNHUB_API = "cs8ng69r01qu0vk4g5a0cs8ng69r01qu0vk4g5ag"
-
 
 class FileNames:
     def __init__(self, stock, start_date, end_date):

@@ -10,6 +10,7 @@ import finnhub
 import datetime
 import string
 import re
+import os
 import numpy as np
 import pandas as pd
 import yfinance as yf
@@ -23,7 +24,7 @@ from internetarchive.search import Search
 from internetarchive import get_item
 from langdetect import detect
 
-
+FINNHUB_API = os.getenv("FINNHUB_API")
 CLEANR = re.compile('<.*?>')
 
 
@@ -101,7 +102,7 @@ class FinnHubNews(NewsExtraction):
             return self.extracted_data
 
         # Extract news from source
-        finnhub_client = finnhub.Client(api_key=KEYS.FINNHUB_API)
+        finnhub_client = finnhub.Client(api_key=FINNHUB_API)
         results = finnhub_client.company_news(self.ticker, _from=self.start_date, to=self.end_date)
 
         # Convert results into dataframe
