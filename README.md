@@ -9,8 +9,9 @@ Python project to predict future stock prices based on historical prices and sen
 
 See `requirements.txt` for all libraries and versions needed.
 
-To run app:
+To run app,
 - Deployed: https://lstmstockpredictor.streamlit.app/
 - Code: 
     1. Download repo
-    2. Inside `lstm_stock_prediction_sentiment_analysis` main folder, run `streamlit run code/run.py`
+    2. Set up your FinnHub API in your environment (`export FINNHUB_API={your key}`)
+    3. Inside `lstm_stock_prediction_sentiment_analysis` main folder, run `streamlit run code/run.py`
