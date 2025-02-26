@@ -1,6 +1,6 @@
-'''
+"""
 Extracting news sentiment data on specific company stock
-'''
+"""
 
 # FinnHub Resources:
 # https://finnhub.io/docs/api/websocket-news (Premium)
@@ -17,12 +17,13 @@ import yfinance as yf
 import streamlit as st
 
 from tqdm import tqdm
-from names import FileNames, KEYS
+from names import FileNames
 
 from internetarchive.session import ArchiveSession
 from internetarchive.search import Search
 from internetarchive import get_item
 from langdetect import detect
+
 
 FINNHUB_API = os.getenv("FINNHUB_API")
 CLEANR = re.compile('<.*?>')
@@ -130,6 +131,8 @@ class FinnHubNews(NewsExtraction):
         # Export results if requested
         self._export()
 
+        st.write(f"{self.name} news data successfully downloaded!")
+
         # Return dataframe
         return self.extracted_data
 
@@ -230,6 +233,8 @@ class InternetArchiveNews(NewsExtraction):
 
         # Export results if requested
         self._export()
+
+        st.write(f"{self.name} news data successfully downloaded!")
 
         # Return dataframe
         return self.extracted_data

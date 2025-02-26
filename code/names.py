@@ -1,3 +1,7 @@
+"""
+Reference for filenames and locations
+"""
+
 _BASE_DIR = "code"
 
 
@@ -7,7 +11,8 @@ class LOCATIONS:
     SAVE_NEWS_LOCATION = f"{_BASE_DIR}/DataPreprocessing/Data/NewsData"
     SAVE_GRAPH_LOCATION = f"{_BASE_DIR}/DataPreprocessing/Data/Graphs"
     SAVE_HIST_TRAIN_LOCATION = f"{_BASE_DIR}/DataPreprocessing/Data/TrainingHistory"
-    TICKER_DATA_LOCATION = f"{_BASE_DIR}/TickerData/tickers.json"
+    TICKER_DATA_LOCATION = f"{_BASE_DIR}/TickerData"
+
 
 class KEYS:
     STOCK_DATA_HEADERS = {
@@ -17,6 +22,7 @@ class KEYS:
         'DNT': '1', # Do Not Track Request Header 
         'Connection': 'close'
     }
+
 
 class FileNames:
     def __init__(self, stock, start_date, end_date):

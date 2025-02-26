@@ -1,16 +1,19 @@
-import pandas as pd
-import requests
-import warnings
-
-from names import FileNames, KEYS
-warnings.filterwarnings(action='ignore')
-import datetime
-import yfinance as yf
-
-
 """
 Extracting Stock Market Data for a given Stock ticker and date range from Yahoo Finance
 """
+
+import pandas as pd
+import requests
+import warnings
+import datetime
+import yfinance as yf
+import streamlit as st
+
+from names import FileNames, KEYS
+
+
+warnings.filterwarnings(action='ignore')
+
 
 def get_stock_data(ticker: str, 
                    start_date: datetime, 
@@ -129,17 +132,11 @@ def get_stock_data_v2(ticker: str,
     dl_data.reset_index(inplace=True)
     dl_data.columns = dl_data.columns.str.lower()
 
-    print(dl_data)
-
     # Export data if requested
     if export_data:
         dl_data.to_csv(export_filepath)
 
+    st.write(f"Historical stock price data successfully downloaded!")
+
     # Return data
     return dl_data
-
-
-
-# print(get_stock_data(ticker="AAPL", 
-#                      start_date=datetime.datetime(2022, 1, 1), 
-#                      export_data=True))
