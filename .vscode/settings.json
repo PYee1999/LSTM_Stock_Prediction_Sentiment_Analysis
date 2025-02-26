@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./code/DataPreprocessing/DataExtraction/Scraping-Tools-Benzinga-master"
+    ]
+}
