@@ -25,7 +25,7 @@ from internetarchive import get_item
 from langdetect import detect
 
 
-FINNHUB_API = os.getenv("FINNHUB_API")
+FINNHUB_API = st.secrets["FINNHUB_API"]
 CLEANR = re.compile('<.*?>')
 
 
